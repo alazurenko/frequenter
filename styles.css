@@ -1,0 +1,31 @@
+:root {
+  --color-progress: black;
+  --color-left: lightgray;
+  --progress: 0%;
+}
+
+.progress {
+  height: 40px;
+  display: grid;
+  grid-template: "pass upcoming";
+  grid-template-columns: var(--progress);
+}
+
+.progress-pass {
+  background-color: var(--color-progress);
+}
+
+.progress-upcoming {
+  background-color: var(--color-left);
+}
+
+.scale {
+  display: grid;
+  height: 1px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 6px
+}
+
+.scale *:nth-child(-n+4) {
+  background-color: var(--color-progress);
+}
