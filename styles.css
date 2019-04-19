@@ -1,7 +1,12 @@
 :root {
   --color-progress: black;
+  --color-hover: rgba(0, 0, 0, 0.5);
   --color-left: lightgray;
   --progress: 0%;
+  --progress-pass-content: 'passed days';
+  --progress-upcoming-content: 'upcoming days';
+   /* grid stuff */
+  --grid-gap: 6px;
 }
 
 .progress {
@@ -9,6 +14,11 @@
   display: grid;
   grid-template: "pass upcoming";
   grid-template-columns: var(--progress);
+}
+
+.progress .progress-pass,
+.progress .progress-upcoming {
+  cursor: pointer;
 }
 
 .progress-pass {
@@ -19,11 +29,32 @@
   background-color: var(--color-left);
 }
 
+.progress-pass:hover,
+.progress-upcoming:hover {
+  background-color: var(--color-hover);
+}
+
+.progress-pass:hover::after,
+.progress-upcoming:hover::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.progress-pass:hover::after {
+  content: var(--progress-pass-content);
+}
+
+.progress-upcoming:hover::after {
+  content: var(--progress-upcoming-content);
+}
+
 .scale {
   display: grid;
   height: 1px;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: 6px
+  grid-gap: var(--grid-gap) ;
 }
 
 .scale *:nth-child(-n+4) {
