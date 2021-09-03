@@ -1,9 +1,14 @@
 import { Record, RecordProps } from "./record";
 import { RecordList } from "./record-list";
+import { useTable } from "react-table";
 
 export const Dashboard: React.FC = () => {
+  // todo: try out react-table https://react-table.tanstack.com/
+  const columns = {};
+  const data = [];
+
   const mock: RecordProps = {
-    name: 'BTC',
+    name: "BTC",
     price: 16000,
     percentageChange24h: 5,
     percentageChangeMonth: 24,
@@ -11,13 +16,14 @@ export const Dashboard: React.FC = () => {
     totalGain: 4000,
     value: 24000,
     roi: 15,
-    allocation: 100
-  }
+    allocation: 100,
+  };
+
   return (
     <div>
       <h1 className="text-6xl">Dashboard</h1>
       <RecordList>
-        <Record <RecordProps> {...mock}/>
+        <Record<RecordProps> {...mock} />
       </RecordList>
     </div>
   );

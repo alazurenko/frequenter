@@ -6,11 +6,11 @@ type Props = {
 };
 
 export const LayoutMain = ({ children }: Props) => {
-  return <div className="container mx-auto text-3xl">{children}</div>;
+  return <div className="container mx-auto text-2xl">{children}</div>;
 };
 
 export const Layout: React.FC<Props> = (props) => (
-  <div className="container mx-auto text-3xl">
+  <div className="container mx-auto text-2xl">
     <Header />
     <LayoutMain>{props.children}</LayoutMain>
   </div>
