@@ -3,7 +3,8 @@ import { useRouter } from "next/router";
 import { Layout } from "../../components/layout";
 // import { Post, PostProps } from "../components/post";
 import Link from "next/link";
-import { Dashboard } from './../../components/dashboard';
+import { Dashboard } from "./../../components/dashboard";
+import { AppContextProvider } from "../../contexts/app.context";
 
 // export const getStaticProps: GetStaticProps = async () => {
 //   const feed = [

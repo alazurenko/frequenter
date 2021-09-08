@@ -1,11 +1,15 @@
 import { Record, RecordProps } from "./record";
 import { RecordList } from "./record-list";
 import { useTable } from "react-table";
+import { useAppContext } from "../contexts/app.context";
+import { Authentication } from "./authenitcation";
 
 export const Dashboard: React.FC = () => {
   // todo: try out react-table https://react-table.tanstack.com/
   const columns = {};
   const data = [];
+
+  const { state, setState } = useAppContext();
 
   const mock: RecordProps = {
     name: "BTC",
@@ -25,6 +29,7 @@ export const Dashboard: React.FC = () => {
       <RecordList>
         <Record<RecordProps> {...mock} />
       </RecordList>
+      <Authentication />
     </div>
   );
 };
