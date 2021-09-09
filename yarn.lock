@@ -2655,7 +2655,7 @@
   "resolved" "https://registry.npmjs.org/react-table/-/react-table-7.7.0.tgz"
   "version" "7.7.0"
 
-"react@^15.0.0 || ^16.0.0", "react@^16.0 || ^17.0", "react@^16.14.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.3 || ^17.0.0-0", "react@^17.0.2", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@16.14.0":
+"react@^15.0.0 || ^16.0.0", "react@^16.0 || ^17.0", "react@^16.14.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.3 || ^17.0.0-0", "react@^17.0.2", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@>=16.8.0", "react@16.14.0":
   "integrity" "sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.14.0.tgz"
   "version" "16.14.0"
@@ -2905,6 +2905,16 @@
   "integrity" "sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow="
   "resolved" "https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz"
   "version" "1.5.0"
+
+"storeon-substore@^1.4.0":
+  "integrity" "sha512-PdW5sD8m8aHRtbmliiBJB5EDnBp39k4YEf6bGqxSQuJizkmgUeTkKmLVAvDUT/f/KR4A6EF53657P1GUpzm60Q=="
+  "resolved" "https://registry.npmjs.org/storeon-substore/-/storeon-substore-1.4.0.tgz"
+  "version" "1.4.0"
+
+"storeon@^3.1.1", "storeon@^3.1.4":
+  "integrity" "sha512-GUSyCevVP00T5b5/Z05ZGkrJFh4IbXjCAl+R27pBslamFLS/qSxJoSwYIGbIZOjujRAgUiWIzPDZP6Ma3vSR9Q=="
+  "resolved" "https://registry.npmjs.org/storeon/-/storeon-3.1.4.tgz"
+  "version" "3.1.4"
 
 "stream-browserify@^2.0.1":
   "integrity" "sha512-nX6hmklHs/gr2FuxYDltq8fJA1GDlxKQCz8O/IM4atRqBH8OORmBNgfvW5gG10GT/qQ9u0CzIvr2X5Pkt6ntqg=="
