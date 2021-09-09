@@ -1,13 +1,15 @@
 import { AppProps } from "next/app";
-import { AppContextProvider } from "../contexts/app.context";
+// import { AppContextProvider } from "../contexts/app.context";
+import { StoreContext } from "storeon/react";
+import {store} from '../store';
 import "tailwindcss/tailwind.css";
 import "./../components/global.css";
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <AppContextProvider>
+    <StoreContext.Provider value={store}>
       <Component {...pageProps} />;
-    </AppContextProvider>
+    </StoreContext.Provider>
   );
 };
 
